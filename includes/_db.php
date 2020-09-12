@@ -5,9 +5,9 @@ date_default_timezone_set("Brazil/East");
 
 
 define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASS', '');
-define('DB_DATABASE', 'bdti');
+define('DB_USER', 'id12946817_apiuser');
+define('DB_PASS', 'Jr639528417@');
+define('DB_DATABASE', 'id12946817_apidb');
 
 require_once('_funcoes.php');  
 
