@@ -2,12 +2,25 @@
 
 
 date_default_timezone_set("Brazil/East");
+ /*
+define('DB_HOST', 'sql384.main-hosting.eu');
+define('DB_USER', 'u755225111_holanda');
+define('DB_PASS', 'K:r5Y*Os');
+define('DB_DATABASE', 'u755225111_muriterapias');
 
 
-define('DB_HOST', 'localhost');
-define('DB_USER', 'id12946817_apiuser');
-define('DB_PASS', 'Jr639528417@');
-define('DB_DATABASE', 'id12946817_apidb');
+ 
+define('DB_HOST', 'mysql669.umbler.com');
+define('DB_USER', 'u755225111_holan');
+define('DB_PASS', '{jF?-,U2a9');
+define('DB_DATABASE', 'u755225111_murit');
+*/
+
+define('DB_HOST', 'sql384.main-hosting.eu');
+define('DB_USER', 'u755225111_holanda');
+define('DB_PASS', 'K:r5Y*Os');
+define('DB_DATABASE', 'u755225111_muriterapias');
+ 
 
 require_once('_funcoes.php');  
 
@@ -27,6 +40,7 @@ class db
     public function __construct(){
 
         $this->con = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_DATABASE);
+        $this->con->set_charset("utf8");
         if ($this->con->connect_errno) {
             exit("Falha ao conectar: (" . $this->con->connect_errno . ") " . $this->con->connect_error);
         }
